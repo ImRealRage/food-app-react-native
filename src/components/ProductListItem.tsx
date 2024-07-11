@@ -1,4 +1,4 @@
-import Colors from 'src/constants/Colors';
+import Colors from '@/src/constants/Colors';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { Product } from '../types';
 
@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
     borderRadius: 20,
+    flex: 1,
   },
 
   image: {

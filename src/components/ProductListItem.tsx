@@ -13,7 +13,8 @@ const ProductListItem = ({ product } : ProductListItemProps) => {
     <View style={styles.container}>
       <Image 
         source={{ uri: product.image || defaultPizzaImage }} 
-        style={styles.image} 
+        style={styles.image}
+        resizeMode='contain'
       />
 
       <Text style={styles.title}>{product.name}</Text>
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 20,
     flex: 1,
+    maxWidth: '50%',
   },
 
   image: {
